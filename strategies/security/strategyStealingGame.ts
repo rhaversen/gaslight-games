@@ -1,8 +1,7 @@
-﻿// NOTE: this file normally lives in the gaslight-games repo, where
-// commonTypes.d.ts is not part of the game source — the runner injects its
-// own copies of commonTypes/errors/gameGuard into every game bundle
-// (commonGameFiles). The relative import below resolves when the fixture
-// merges those files alongside this one during bundling.
+﻿// commonTypes.d.ts is not part of this repo — the runner injects its own
+// copies of commonTypes/errors/gameGuard into every game bundle
+// (commonGameFiles / the test fixture map). The relative import resolves via
+// the bundler's virtual-file resolver against that merged map.
 import type { Game, Player } from '../../commonTypes.d.ts'
 
 /**
